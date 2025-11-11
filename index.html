@@ -4,8 +4,56 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>防犯活動支援ページ</title>
+ <style>
+    /* 背景画像の設定 */
+    body {
+      background-image: url('wallpaper.jpg'); /* ← ここに画像ファイル名 */
+      background-size: cover;          /* 画面全体に広げる */
+      background-position: center;     /* 画像を中央に配置 */
+      background-attachment: fixed;    /* スクロールしても固定 */
+      margin: 0;
+      font-family: "Hiragino Sans", "Yu Gothic", sans-serif;
+    }
+
+    /* 半透明の白いベール */
+    .overlay {
+      background-color: rgba(255, 255, 255, 0.85); /* 白＋透過15% */
+      max-width: 800px;       /* 本文部分の幅 */
+      margin: 0 auto;         /* 中央寄せ */
+      padding: 2em;           /* 内側の余白 */
+      min-height: 100vh;      /* 画面の高さ全体を覆う */
+      box-sizing: border-box; /* パディング分も含めて幅を計算 */
+    }
+
+    h1, h2 {
+      text-align: center;
+      color: #333;
+    }
+
+    p {
+      color: #333;
+      line-height: 1.8;
+    }
+
+    a {
+      color: #0077cc;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+
+    img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 8px;
+      border: 1px solid #ccc;
+    }
+  </style>
 </head>
-<body style="font-family:sans-serif; line-height:1.6; max-width:700px; margin:auto; padding:2em;">
+<body>
+  <div class="overlay">
   <h1>非営利団体〇〇　寄付用ノベルティ販売ページ　</h1>
   <p>オリジナルステッカー</p>
   <h2>購入方法</h2>
@@ -24,12 +72,6 @@
   <p>または、以下の口座にお振込みでも受け付けています。<br>
   振込先：○○銀行　△△支店　普通　1234567　（名義：防犯ネット）</p>
   <hr>
-  <p>日本では政治、宗教に関わる活動で行政からの支援を得るのは困難です。
-    <br>ですが、今現在日本で最も重要なのは「移民政策を止めること」です。
-    <br>かつてのように安心して暮らせる国にする「目標」に向かって進み続けます。
-    <br>
-    <br>非営利団体〇〇代表：〇〇</p>
+  <p>日本では政治、宗教に関わる活動で行政からの支援を得るのは困難です。<br>ですが、今現在日本で最も重要なのは「移民政策を止めること」です。<br>かつてのように安心して暮らせる国にする「目標」に向かって進み続けます。<br>非営利団体〇〇代表：〇〇</p>
 </body>
 </html>
-
-
